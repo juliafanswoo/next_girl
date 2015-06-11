@@ -1,0 +1,438 @@
+
+/* Layout */
+
+a {
+    color: #027de5;
+}
+.gray {
+    color: #999;
+}
+.green {
+    color: green;
+}
+.red {
+    color: red;
+}
+textarea {
+    line-height: 18px;
+    font-size: 12px;
+    padding: 5px;
+}
+input[type=text],
+input[type=number],
+input[type=password] {
+    height: 20px;
+    line-height: 18px;
+    font-size: 12px;
+    padding: 5px;
+}
+input ,select, textarea { -webkit-animation: fadeInLeft 0.8s; }
+[data-hrefto] {
+    cursor: pointer;
+}
+.ahref {
+    color: #027de5;
+    cursor: pointer;
+}
+body {
+    font-size: 12px;
+    /* Resets 1em to 10px */
+    height: 100%;
+    background: #fff;
+    line-height: 1.4;
+    overflow-y: scroll;
+}
+.body {
+    height: 100%;
+    overflow-x: hidden;
+}
+.wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #EEE;
+}
+.header {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+    line-height: 50px;
+}
+.header .logo {
+    display: block;
+    width: 120px;
+    height: 50px;
+    margin-left: 25px;
+    background: url(../img/fanswoo-logo.svg) no-repeat center center;
+    float: left;
+    font-size: 15px;
+    color: #FFF;
+}
+html.agent-ie8 .header .logo {
+    background: url(../img/fanswoo-logo.png) no-repeat center center;
+}
+.header .logStatus {
+    float: right;
+    color: #FFF;
+    margin-right: 30px;
+}
+.header .logStatus .username {
+    margin: 0 10px 0 0;
+}
+.header .logStatus a {
+    color: #FFF;
+}
+.sidebar {
+    float: left;
+    background: rgba(100, 100, 100, 1);
+    width: 180px;
+    height: 100%;
+    font-size: 15px;
+    padding: 70px 0 300px 0;
+    padding-bottom: 10000px;
+    margin-bottom: -10000px;
+}
+.sidebar .sidebox {
+    margin-bottom: 10px;
+}
+.sidebar .sidebox.hidden{
+    display: none;
+}
+.sidebar .sidebox h2 {
+    font-size: 15px;
+    height: 50px;
+    line-height: 50px;
+    color: #AAA;
+    background: rgba(50, 50, 50, 1);
+    padding-left: 30px;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+.sidebar .sidebox h2:hover {
+    color: #FFF;
+}
+.sidebar .sidebox {
+    height: 50px;
+    max-height: 50px;
+    min-height: 50px;
+    overflow: hidden;
+    -webkit-transition: min-height 0.5s, max-height 1.2s;
+}
+.sidebar .sidebox.hover {
+    height: auto;
+    max-height: 1000px;
+    min-height: 200px;
+}
+.sidebar .sidebox .acHref .acHrefBig {
+    font-size: 15px;
+    height: 40px;
+    line-height: 42px;
+    padding-left: 20px;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 30px;
+    -webkit-transition: all 0.5s;
+    background: rgba(100, 100, 100, 1);
+    color: #AAA;
+}
+.sidebar .sidebox .acHref:hover .acHrefBig {
+    color: #FFF;
+}
+.sidebar .sidebox .acHref.hover:hover .acHrefBig,
+.sidebar .sidebox .acHref.hover .acHrefBig {
+    background: #027de5;
+    color: #FFF;
+}
+.sidebar .sidebox .acHref .acHrefSmallBar {
+    padding: 0 0 0 30px;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.5s;
+}
+.sidebar .sidebox .acHref.hover .acHrefSmallBar {
+    padding: 10px 0 10px 30px;
+    height: auto;
+    background: rgba(80, 80, 80, 1);
+}
+.sidebar .sidebox .acHref .acHrefSmallBar .acHrefSmall,
+.sidebar .sidebox .acHref.hover .acHrefSmallBar .acHrefSmall {
+    display: block;
+    position: relative;
+    color: #AAA;
+    cursor: pointer;
+    line-height: 20px;
+    font-size: 13px;
+    -webkit-transition: color 0.5s;
+}
+.sidebar .sidebox .acHref.hover .acHrefSmallBar .acHrefSmall:hover,
+.sidebar .sidebox .acHref.hover .acHrefSmallBar .acHrefSmall.hover {
+    color: #FFF;
+}
+.sidebar .sidebox .acHref.hover .acHrefSmallBar .acHrefSmall.hover::after {
+    right: 0;
+    border: 8px solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-right-color: #EEE;
+    top: 50%;
+    margin-top: -8px;
+}
+.content {
+    float: left;
+    width: calc(100% - 260px);
+    min-height: 600px;
+    padding: 80px 20px;
+}
+.content h2 {
+    margin-bottom: 20px;
+}
+.content .contentBox.allWidth {
+    width: 100%;
+}
+.content .contentBox {
+    padding: 20px;
+    background: #FFF;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.content .contentBox h3 {
+    display: block;
+    font-size: 18px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+.content .contentBox h4 {
+    display: block;
+    font-size: 12px;
+    color: #999;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+.content .contentBox .spanLine {
+    padding: 5px 10px;
+    border-bottom: 1px solid #EEE;
+    min-height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    -webkit-transition: background 0.5s;
+}
+.content .contentBox .spanLine.tableTitle {
+    background: #EEE;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    min-height: 20px;
+    line-height: 20px;
+}
+.content .contentBox .spanLine:hover {
+    background: #EEE;
+}
+.content .contentBox .spanLine.noneBg {
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+}
+.content .contentBox .spanLine.noneBg:hover {
+    background: none;
+}
+.content .contentBox .spanLine .spanStage {
+    overflow: hidden;
+}
+.content .contentBox .spanLine .spanLineLeft {
+    float: left;
+    padding: 0 6px;
+    min-height: 20px;
+    width: 150px;
+    overflow: hidden;
+}
+.content .contentBox .spanLine .spanLineLeft.hoverHidden {
+    opacity: 0;
+    -webkit-transform: translate(15px, 0);
+    transition: all 0.3s;
+}
+.content .contentBox .spanLine:hover .spanLineLeft.hoverHidden {
+    -webkit-transform: translate(0, 0);
+    opacity: 1;
+}
+.content .contentBox .spanLine .spanLineLeft.hoverHidden a{ margin-right: 10px; }
+.content .contentBox .spanLine .spanLineLeft.aligncenter {
+    text-align: center;
+}
+.content .contentBox .spanLine .spanLineLeft.width200,
+.content .contentBox .spanLine .spanLineRight.width200 {
+    width: 200px;
+}
+.content .contentBox .spanLine .spanLineLeft.width300,
+.content .contentBox .spanLine .spanLineRight.width300 {
+    width: 300px;
+}
+.content .contentBox .spanLine .spanLineLeft.width400,
+.content .contentBox .spanLine .spanLineRight.width400 {
+    width: 400px;
+}
+.content .contentBox .spanLine .spanLineLeft.width500,
+.content .contentBox .spanLine .spanLineRight.width500 {
+    width: 500px;
+}
+.content .contentBox .spanLine .spanLineLeft.width100,
+.content .contentBox .spanLine .spanLineRight.width100 {
+    width: 100px;
+}
+.content .contentBox .spanLine .spanLineLeft.text {
+    padding: 0 6px;
+    width: 145px;
+}
+.content .contentBox .spanLine .spanLineLeft.text.width200,
+.content .contentBox .spanLine .spanLineRight.text.width200 {
+    width: 195px;
+}
+.content .contentBox .spanLine .spanLineLeft.text.width300,
+.content .contentBox .spanLine .spanLineRight.text.width300 {
+    width: 295px;
+}
+.content .contentBox .spanLine .spanLineLeft.text.width400,
+.content .contentBox .spanLine .spanLineRight.text.width400 {
+    width: 395px;
+}
+.content .contentBox .spanLine .spanLineLeft.text.width500,
+.content .contentBox .spanLine .spanLineRight.text.width500 {
+    width: 495px;
+}
+.content .contentBox .spanLine .spanLineLeft.text.width100,
+.content .contentBox .spanLine .spanLineRight.text.width100 {
+    width: 95px;
+}
+.content .contentBox .spanLine .spanLineRight {
+    float: right;
+    width: calc(100% - 168px);
+    min-height: 40px;
+}
+.content .contentBox .spanLine .spanLineRight p {
+    margin: 5px 0;
+    line-height: 20px;
+}
+.content .contentBox .spanLine .spanLineLeft textarea,
+.content .contentBox .spanLine .spanLineRight textarea {
+    width: calc(100% - 12px);
+    height: 200px;
+    margin-top: 4px;
+}
+
+.content .contentBox .spanLine .spanLineRight .contentList{  }
+.content .contentBox .spanLine .spanLineRight .contentList .contentLi{  }
+
+.content .contentBox .spanLine.spanSubmit {
+    padding-top: 50px;
+    border: none;
+}
+.content .contentBox .spanLine.spanSubmit:hover {
+    background: none;
+}
+.content .contentBox .spanLine .button {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 10px 0 0;
+    padding: 5px;
+    width: 120px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: #FFF;
+    background: #555;
+}
+.content .contentBox .spanLine .button.gray { background: #AAA; border-color: #999; color: #333; }
+.content .contentBox .spanLine select {
+    display: block;
+    float: left;
+    padding: 6px;
+    margin: 5px 5px 0 0;
+    min-width: 150px;
+    height: 32px;
+    font-size: 12px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+.content .contentBox .spanLine select:hover {
+    border: 1px solid #027de5;
+}
+.content .contentBox .spanLine .selectLine { display: block; overflow: hidden; border-bottom: 1px dashed #DDD; padding: 5px 0 10px; }
+.content .contentBox .spanLine input.text {
+    width: calc(100% - 20px);
+    padding: 5px;
+    height: 20px;
+    font-size: 12px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    transition: border 0.5s;
+}
+.content .contentBox .spanLine input.text:hover {
+    border: 1px solid #027de5;
+}
+.content .contentBox .spanLine input.text.floatright {
+    margin-top: 4px;
+}
+.content .contentBox .spanLine input.submit {
+    cursor: pointer;
+    float: left;
+    padding: 7px;
+    width: 150px;
+    height: 40px;
+    font-size: 12px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    color: #FFF;
+    background: #027de5;
+    margin-right: 10px;
+}
+.content .contentBox .spanLine span.submit {
+    display: block;
+    float: left;
+    cursor: pointer;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+    width: 130px;
+    height: 40px;
+    font-size: 12px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    color: #FFF;
+    background: #027de5;
+    margin-right: 10px;
+}
+.content .contentBox .spanLine span.submit.gray{
+    border: 1px solid #AAA;
+    color: #555;
+    background: #CCC;
+}
+
+.content .contentBox .spanLine .spanLineLeft .picidUploadList { padding-top: 10px; }
+.content .contentBox .spanLine .spanLineLeft .picidUploadList .picidUploadLi { float:left; width:50px; height: 50px; border: 2px solid #FFF; position:relative; margin: 0 5px 5px 0; }
+.content .contentBox .spanLine .spanLineLeft .picidUploadList .picidUploadLi .picDelete { display: block; position: absolute; width:50px; height: 50px; background: rgba(255, 255, 255, 0.8) url(../img/admin/delete.png) center center no-repeat; cursor: pointer; animation: fadeOut 0.5s; opacity: 0; -webkit-transition: opacity 0.5s; transition: opacity 0.5s; }
+.content .contentBox .spanLine .spanLineLeft .picidUploadList .picidUploadLi:hover .picDelete { opacity: 1; }
+
+.pageLink { margin: 20px 10px; }
+.pageLink a, .pageLink strong { display: block; float: left; width: 20px; height: 20px; margin-right: 10px; background: #EEE; text-align: center; padding: 5px; line-height: 20px; color: #555; -webkit-transition: all 0.5s; }
+.pageLink a:hover,
+.pageLink strong:hover,
+.pageLink strong { background: #555; color: #FFF; }
+
+.footer {
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.9);
+    color: #FFF;
+}
+.footer a {
+    color: #FFF;
+}

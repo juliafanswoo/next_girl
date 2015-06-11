@@ -1,0 +1,92 @@
+/*****************************************checkoutBox********************************/
+
+.wrapContent { width: 800px; margin:110px auto 50px; overflow:hidden;}
+.wrapContent .borderTitle { border-left: 5px solid #333; padding-left:10px; margin-bottom: 20px; }
+.wrapContent .checkoutBox { background:#FFF; overflow:hidden; margin-bottom: 40px; }
+.wrapContent .checkoutBox .title { display:block; overflow:hidden; }
+.wrapContent .checkoutBox .title .cartLi { display:block; font-size:15px; padding:5px; text-align:center; border-bottom:1px solid #EEE; line-height:30px; height:30px; overflow:hidden; }
+.wrapContent .checkoutBox .cartList { min-height: 200px; display:block; overflow:hidden; }
+.wrapContent .checkoutBox .cartList .cartLi { display: block; font-size:15px; padding:5px; text-align:center; border-bottom:1px solid #EEE; line-height:30px; height:30px; overflow:hidden; }
+.wrapContent .checkoutBox .cartList .cartLi input[type="number"]{ width:45px; }
+.wrapContent .checkoutBox .cartList .cartLi input{ width:45px; }
+.wrapContent .checkoutBox .title .name,
+.wrapContent .checkoutBox .cartList .cartLi .name { display:block; float:left; width:520px; height:30px; text-align:left; }
+.wrapContent .checkoutBox .title .price,
+.wrapContent .checkoutBox .cartList .cartLi .price { display:block; float:left; width:60px; height:30px; }
+.wrapContent .checkoutBox .title .quantityName,
+.wrapContent .checkoutBox .cartList .cartLi .quantityName { display:block; float:left; width:90px; height:30px; }
+.wrapContent .checkoutBox .title .quantityName2,
+.wrapContent .checkoutBox .cartList .cartLi .quantityName2 { display:block; float:left; width:90px; height:30px; text-align:center; }
+.wrapContent .checkoutBox .title .amount,
+.wrapContent .checkoutBox .cartList .cartLi .amount { display:block; float:left; width:90px; height:30px; }
+.wrapContent .checkoutBox .title .priceTotal,
+.wrapContent .checkoutBox .cartList .cartLi .priceTotal { display:block; float:left; width:60px; height:30px; }
+.wrapContent .checkoutBox .title .delete,
+.wrapContent .checkoutBox .cartList .cartLi .delete { display:block; float:left; width:60px; height:30px; }
+.wrapContent .checkoutBox .productOther { font-size:12px; height:30px; line-height:30px; font-size:12px; padding:5px 15px 5px 5px; }
+.wrapContent .checkoutBox .productOther .productTotal { float:right; width:200px;text-align:right; }
+.wrapContent .checkoutBox .productOther .productTotal b{ font-size:15px; color:#ed192f; }
+.wrapContent .checkoutBox .checkoutPost { margin-top:30px; background:#EEE; overflow:hidden; height:40px; padding:10px 0 10px 130px; text-align:center; }
+.wrapContent .checkoutBox .checkoutPost .button { display:block; cursor:pointer; float:left; background:#555; border:1px solid #555; width:200px; height:20px; line-height: 22px; margin-right:10px; color:#FFF; padding:10px 30px; transition:all 0.5s; -moz-transition:all 0.5s; -webkit-transition:all 0.5s; }
+.wrapContent .checkoutBox .checkoutPost .button:hover { background:#999; border:1px solid #777; }
+.wrapContent .checkoutBox .checkoutPost input{ display:block; float:left; cursor:pointer; background:#555; border:1px solid #555; width:260px; line-height:22px; height:42px; margin-top:0; margin-right:10px; color:#FFF; padding:10px 30px; transition:all 0.5s; -moz-transition:all 0.5s; -webkit-transition:all 0.5s; }
+.wrapContent .checkoutBox .checkoutPost input:hover { background:#999; border:1px solid #777; }
+.wrapContent .checkoutBox .cardTable .bigTitle { display:block; padding:10px 10px 12px; margin:10px 0; background:#EEE; font-size:15px; font-weight:900; }
+.wrapContent .checkoutBox .cardTable .stage{ font-size:15px; display:block; overflow:hidden; padding:5px 10px 7px; border-bottom:1px solid #EEE; line-height:30px; height:30px; }
+.wrapContent .checkoutBox .cardTable .stage .floatleft { width:100px; }
+.wrapContent .checkoutBox .cardTable .stage .floatright { width:580px; text-align:left; }
+.wrapContent .checkoutBox .cardTable .stage input.short { width:40px; }
+
+/*****************************************shopBuyText********************************/
+
+.wrapContent .shopBuyText { background:#EEE; margin: 20px 50px; font-size:12px; padding:30px; }
+
+/*****************************************freeFixedContent********************************/
+
+.freeFixedBg { display:none; position:fixed; background:#000; opacity:0.5; z-index:100; width:100%; height:100%; }
+.freeFixedBg.displayblock { display:block; -webkit-animation:a201405150100 1s; }
+@-webkit-keyframes a201405150100{
+	0%{ opacity:0; }
+	100%{ opacity:0.5; }
+}
+.freeFixedBg.opacity0 { -webkit-animation:fadeOut 1s; }
+.freeFixedContent { display:none; position:fixed; width:500px; height:300px; padding:50px; background:#FFF; left:50%; top:50%; margin-left:-300px; margin-top:-200px; z-index:101; border-radius:15px; box-shadow:0 0 50px #555; }
+.freeFixedContent.displayblock { display:block; -webkit-animation:fadeInUp 1s; }
+.freeFixedContent.opacity0 { -webkit-animation:fadeOut 1s; }
+.freeFixedContent h2 { font-size:20px; font-weight:900; margin-bottom:20px; }
+.freeFixedContent .content { height:230px; }
+.freeFixedContent .content .freeBox { height:192px; border:1px solid #DDD; overflow:hidden;}
+.freeFixedContent .content .freeBox.startFree { box-shadow:0 0 10px #f08200; -webkit-animation:p201405141150 5s; }
+@-webkit-keyframes p201405141150{
+	0%{ box-shadow:0 0 10px #FFF; }
+	70%{ box-shadow:0 0 10px #FFF; }
+	100%{ box-shadow:0 0 10px #f08200; }
+}
+.freeFixedContent .content .freeBox > .freeBoxList { height:auto; margin:0 0 0; overflow:hidden; padding:20px 0 0; -webkit-animation: p201405141004 10s infinite; }
+@-webkit-keyframes p201405141004{
+	0%{ -webkit-transform: translate(0, 0); }
+	50%{ -webkit-transform: translate(0, calc( -100% + 192px) );}
+	100%{ -webkit-transform: translate(0, 0); }
+}
+.freeFixedContent .content .freeBox.startFree > .freeBoxList { -webkit-animation: p201405141005 5s ; }
+@-webkit-keyframes p201405141005{
+	0%{ -webkit-transform: translate(0, 0); }
+	10%{ -webkit-transform: translate(0, calc( -100% + 192px) );}
+	25%{ -webkit-transform: translate(0, 0); }
+	45%{ -webkit-transform: translate(0, calc( -100% + 192px) );}
+	70%{ -webkit-transform: translate(0, 0); }
+	80%{ -webkit-transform: translate(0, 8px);}
+	85%{ -webkit-transform: translate(0, -6px);}
+	90%{ -webkit-transform: translate(0, 4px);}
+	95%{ -webkit-transform: translate(0, -2px);}
+	100%{ -webkit-transform: translate(0, 0);}
+}
+.freeFixedContent .content .freeBox > .freeBoxList > h2 { font-size:15px; margin-bottom:20px; }
+.freeFixedContent .content .freeBox > .freeBoxList .freeBoxLi { height:150px; padding-bottom:20px; margin-bottom:20px; border-bottom:2px dashed #EEE; overflow:hidden; font-size:14px; }
+.freeFixedContent .content .freeBox > .freeBoxList .freeBoxLi h2{ display:block; margin-top:10px; font-size:18px; font-weight:900; margin-bottom:5px; }
+.freeFixedContent .content .freeBox > .freeBoxList .freeBoxLi h3{ font-size:12px; color:#777; font-weight:900; margin-bottom:20px; }
+.freeFixedContent .content .freeBox > .freeBoxList .freeBoxLi .pic { width:200px; height:150px; float:left; margin-right:20px; overflow:hidden;}
+.freeFixedContent .content .freeBox > .freeBoxList .freeBoxLi .pic > img { float:left; width:100%; height:100%; }
+
+.freeFixedContent .button { display:block; float:left; background:#555; color:#FFF; -webkit-transition:background 0.5s; cursor:pointer; background:#555; border:1px solid #555; width:100px; height:20px; margin-right:10px; padding:10px 30px; text-align:center; }
+.freeFixedContent .button:hover { background:#999; }

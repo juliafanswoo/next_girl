@@ -1,0 +1,15 @@
+body { background: #f5f5f5; }
+.userBox { margin: 100px auto 50px; width: 400px; }
+.userBox h2 { margin-bottom: 15px; text-align:center;font-size:30px; }
+.userBox .message { font-size:12px; border-bottom: 1px solid #EEE; line-height:30px; margin-bottom:10px; padding-bottom:10px; }
+.userBox .userBoxContent { padding:30px; width: 338px; background: #fff; border-radius:5px; overflow:hidden; }
+.userBox .userBoxContent .paragraph { line-height:30px; margin-bottom:10px; }
+.userBox .userBoxContent .paragraph .rememberme input[type=checkbox] { margin-top: -3px; margin-right:3px; }
+.userBox .userBoxContent .paragraph input[type=text],
+.userBox .userBoxContent .paragraph input[type=password],
+.userBox .userBoxContent .paragraph input[type=email] { padding: 5px 10px; width: 316px; height:30px; line-height:30px; font-size:20px; border: 1px solid #DDD; background:#faffbd; color:#333; font-weight:900; letter-spacing:2px; }
+.userBox .userBoxContent .paragraph input::-webkit-input-placeholder { font-size:15px; font-weight:100; color:#AAA; letter-spacing: 1px; }
+.userBox .userBoxContent .paragraph input:-moz-placeholder { font-size:15px; font-weight:100; color:#AAA; letter-spacing: 1px; }
+.userBox .userBoxContent .paragraph input[type=submit] { float: right; padding: 5px; width: 100px; height:30px; line-height:20px; font-size:12px; border: 1px solid #777; border-radius:5px; color:#FFF; background:#027de5; }
+.userBox .userBoxOther { padding:30px; }
+.userBox .userBoxOther p { line-height:20px; margin-bottom:5px; }

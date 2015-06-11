@@ -1,0 +1,5 @@
+body { background: #EEE; }
+.gMessageBox { background:#FFF; border-radius:15px; width:500px; padding:40px 50px 30px; margin:150px auto 200px; line-height:30px; }
+.gMessageBox h2 { margin-bottom:20px; font-size:20px; }
+.gMessageBox p { margin-bottom:10px; font-size:15px; }
+.gMessageBox p.gray { font-size: 12px; color: #777; }

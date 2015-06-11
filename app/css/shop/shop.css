@@ -1,0 +1,74 @@
+/*****************************************shop********************************/
+.wrapContent{width:100%; overflow:hidden;}
+.wrapContent .wrapContentCenter { width: 1220px; margin:0 auto; overflow:hidden;}
+
+.wrapContent .topBox { position:relative; width:970px; height:435px; background:#FFF; margin-left:60px; margin-bottom:10px; overflow:hidden; }
+.wrapContent .topBox .topBoxLi { display:none; position:absolute; width:970px; height:470px; margin-bottom:5px; overflow:hidden; z-index:1; }
+.wrapContent .topBox .topBoxLi[fanScript-slideshowPath=left] { display:block; z-index:1; animation:a201309300328 1s; -webkit-animation:a201309300328 1s; }
+@keyframes a201309300328{
+	0%{ transform:translate(0,0); opacity:1; }
+	100%{ transform:translate(-639px,0); opacity:0; }
+}
+@-webkit-keyframes a201309300328{
+	0%{ -webkit-transform:translate(0,0); opacity:1; }
+	100%{ -webkit-transform:translate(-639px,0); opacity:0; }
+}
+.wrapContent .topBox .topBoxLi[fanScript-slideshowPath=center],
+.wrapContent .topBox .topBoxLi[fanScript-slideshowPath=select]  { display:block; z-index:2; animation:a201309290313 1s; -webkit-animation:a201309290313 1s; }
+@keyframes a201309290313{
+	0%{ transform:translate(634px,0); }
+	100%{ transform:translate(0,0); }
+}
+@-webkit-keyframes a201309290313{
+	0%{ -webkit-transform:translate(634px,0); }
+	100%{ -webkit-transform:translate(0,0); }
+}
+.wrapContent .topBox .topBoxLi img { float:left; width:100%; }
+html.ie7 .wrapContent .topBox .topBoxLi img { margin-top:5px; }
+.wrapContent .topBoxNav { width:950px; padding:10px; background:#EEE; margin:0 0 30px 60px; overflow:hidden; }
+.wrapContent .topBoxNav .topBoxNavLi{ display:block; float:left; margin-right:10px; width:80px; height:56px; overflow:hidden; border:2px solid #FFF; }
+.wrapContent .topBoxNav .topBoxNavLi img { width:80px; height:56px; }
+.wrapContent .topBoxNav .topBoxNavLi:hover,
+.wrapContent .topBoxNav .topBoxNavLi[fanscript-slideshowclick] { opacity:1; }
+
+/***********************************shopList************************/
+
+.wrapContent .wrapContentCenter .shopList { width:900px;margin:0 auto; overflow:hidden; }
+.wrapContent .wrapContentCenter .shopLi { display:block; float:left; width: calc( 25% - 20px ); margin:0 20px 20px 0; color:#AAA; font-size:12px; overflow:hidden; -webkit-animation: fadeIn 1s; }
+.wrapContent .wrapContentCenter .shopLi a { display:block; overflow:hidden; }
+.wrapContent .wrapContentCenter .shopLi .title { opacity:0; text-align:center; height:20px; letter-spacing:5px; margin-bottom:5px; line-height:20px; overflow:hidden; color:#777; -webkit-transition: opacity 0.8s; }
+.wrapContent .wrapContentCenter .shopLi:hover .title { opacity: 1; }
+.wrapContent .wrapContentCenter .shopLi .freePrice { opacity:0; display:block; width:100%; letter-spacing:8px; -webkit-transition: opacity 0.8s; }
+.wrapContent .wrapContentCenter .shopLi:hover .freePrice { opacity: 1; }
+.wrapContent .wrapContentCenter .shopLi .freePrice .price{ display:block; padding:5px 0 5px 5px; height:20px; line-height:20px; text-align:center; color:#333; font-size:12px; }
+.wrapContent .wrapContentCenter .shopLi .border { width:0%; opacity:0; height:1px; background:#DDD; -webkit-transition: all 1.5s; }
+.wrapContent .wrapContentCenter .shopLi:hover .border { width:100%; opacity:1; }
+.wrapContent .wrapContentCenter .shopLi .pic{ display:block; position:relative; width:100%; height:100%; display: block; overflow: hidden; margin-bottom:15px; background: #FFF; }
+.wrapContent .wrapContentCenter .shopLi .pic img.pic1 { float:left; width:100%; opacity:1; -webkit-transition:opacity 0.5s; }
+.wrapContent .wrapContentCenter .shopLi:hover .pic img.pic1 { opacity:0; }
+.wrapContent .wrapContentCenter .shopLi .pic img.pic2 { position: absolute; width:100%; opacity:0; -webkit-transition:all 0.5s; }
+.wrapContent .wrapContentCenter .shopLi:hover .pic img.pic2 { opacity:1; }
+
+/***********************************hotList************************/
+
+.wrapContent .wrapContentCenter .hotList { width:900px; margin:0 auto;overflow:hidden;}
+.wrapContent .wrapContentCenter .hotLi { display:block; float:left; width: calc( 33.3% - 20px ); margin:0 20px 20px 0; background:#FFF; color:#AAA; font-size:12px; overflow:hidden; -webkit-animation: fadeIn 1s; }
+.wrapContent .wrapContentCenter .hotLi a { display:block; overflow:hidden; }
+.wrapContent .wrapContentCenter .hotLi .title { text-align:center; height:20px; letter-spacing:5px; margin-bottom:5px; line-height:20px; overflow:hidden; color:#777; -webkit-transition: opacity 0.8s; }
+.wrapContent .wrapContentCenter .hotLi:hover .title { opacity: 1; }
+.wrapContent .wrapContentCenter .hotLi .freePrice { display:block; width:100%; letter-spacing:8px; -webkit-transition: opacity 0.8s; }
+.wrapContent .wrapContentCenter .hotLi:hover .freePrice { opacity: 1; }
+.wrapContent .wrapContentCenter .hotLi .freePrice .price{ display:block; padding:5px 0 5px 5px; height:20px; line-height:20px; text-align:center; color:#333; }
+.wrapContent .wrapContentCenter .hotLi .border { width:0%; opacity:0; height:1px; background:#DDD; -webkit-transition: all 1.5s; }
+.wrapContent .wrapContentCenter .hotLi:hover .border { width:100%; opacity:1; }
+.wrapContent .wrapContentCenter .hotLi .pic{ position:relative; margin-bottom:15px; width:100%; height:100%; display: block; overflow: hidden; background: #FFF; }
+.wrapContent .wrapContentCenter .hotLi .pic img.pic1 { float:left; width:100%; opacity:1; -webkit-transition:opacity 0.5s; }
+.wrapContent .wrapContentCenter .hotLi:hover .pic img.pic1 { opacity:0; }
+.wrapContent .wrapContentCenter .hotLi .pic img.pic2 { position: absolute; width:100%; opacity:0; -webkit-transition:all 0.5s; }
+.wrapContent .wrapContentCenter .hotLi:hover .pic img.pic2 { opacity:1; }
+
+.pageLink { display:block; width: 350px; margin:20px auto 30px; overflow: hidden; texet-align: center; }
+.pageLink a, .pageLink strong { display: block; float: left; width: 20px; height: 20px; margin-right: 10px; background: #EEE; text-align: center; padding: 5px; line-height: 20px; color: #555; -webkit-transition: all 0.5s; }
+.pageLink a:hover,
+.pageLink strong:hover,
+.pageLink strong { background: #555; color: #FFF; }
